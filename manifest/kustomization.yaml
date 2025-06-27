@@ -1,6 +1,6 @@
 resources:
-  - argocd-img-deployment.yaml
-  - argocd-img-service.yaml
+  - argocd-app.yaml
+  - argocd-db.yaml
   - sealed-secret.yaml
 images:
   - name: nginx 

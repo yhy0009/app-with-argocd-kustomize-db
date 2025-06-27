@@ -1,0 +1,8 @@
+resources:
+  - argocd-img-deployment.yaml
+  - argocd-img-service.yaml
+  - sealed-secret.yaml
+images:
+  - name: nginx 
+    newName: yhy0009/app-with-argocd-img
+    newTag: "002385c"

@@ -63,7 +63,7 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: k8s12345
+              value: ${{ secrets.DB_PASSWORD }}
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-pv

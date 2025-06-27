@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-container
-        image: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:1e233a6bbfa9038577b62d5173535f4d25801a8f
+        image: yhy0009/app-with-argocd-kustomize-db:1e233a6bbfa9038577b62d5173535f4d25801a8f
         ports:
           - protocol: TCP
             containerPort: 8080

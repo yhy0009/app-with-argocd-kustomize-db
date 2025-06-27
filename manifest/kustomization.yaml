@@ -4,5 +4,5 @@ resources:
   - sealed-secret.yaml
 images:
   - name: nginx 
-    newName: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
+    newName: yhy0009/app-with-argocd-kustomize-db
     newTag: "002385c"

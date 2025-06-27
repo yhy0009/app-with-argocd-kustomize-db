@@ -41,6 +41,13 @@ spec:
   selector:
     app: mysql
 ---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: db-storage
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
